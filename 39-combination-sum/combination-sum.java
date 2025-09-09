@@ -3,7 +3,7 @@ class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> current = new ArrayList<>();
-        backtrack(res, current, candidates, target, 0, 0);
+        backtrack(res,  new ArrayList<>(), candidates, target, 0, 0);
         return res;
     }
 
